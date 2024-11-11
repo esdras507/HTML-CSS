@@ -1,0 +1,148 @@
+HTML---HYPERTEXT MARKUP LENGUANGE
+
+atalhos e dicas:
+
+utilize Ctrl + Space para usar um arquivo da pasta
+selecione um texto grande, segure tab e aperte shift para voltar a margem de todo o texto
+selecione um texto e use Ctrl+shift+P para adicionar uma tag nele
+///
+tags basicas:
+
+! + visual code = código base de todo html
+•Título:<h1>
+•Subtitulo..:<h2..>
+•Parágrafo:<p>
+•Título da aba:<title>
+•imagem:<img>
+•quebra de parágrafo:<br>
+///
+Formatações:
+
+•Negrito:<strong>
+•Itálico:<em>
+•Marcação:<Mark>
+•Grande<big> (obsoleto)
+•Pequeno<small>
+•Deletado(riscado):<del>
+•Inserido(sublinhado):<ins>
+•Sobrescrito(um nível acima):<sup>
+•Subscrito (um nível abaixo):<sub>
+•Código fonte (letra espaçada):<code>
+•citação simples:<q>
+•citação grande:<blockquote>
+•abreviação:<abbr>
+///
+listas:
+
+•criar uma lista ordenada:<ol>(utilize"type" para alternar o tipo da lista)
+(1=numerico/a=alfabetica/i=numeros romanos)
+•criar uma lista nao ordenada<ol>(utilize "type" para alternar o estilo da lista)
+(disk=•/circle=○/square=□)
+•criar uma lista de definição:<dl>(para adicionar um item a ser definido:<dt>) (para adicionar a definição de um item:<dd>)
+•adicionar um item a lista:<il>
+///
+Links:
+
+•para colocar um link em uma palavra:<a>
+(Adicione o parâmetro target="_Black "
+e o parâmetro rel="external" para n sair do seu site)
+Links externos:
+•para colocar um link externo:<a>
+(adicione o parâmetro rel="prev")
+
+(E informe o caminho usando ctrl + space{Caso seja necessário voltar uma página escreva../})
+
+[Quando for um patrocínio ou algo assim adicione o parâmetro rel="nofollow"]
+
+downloads:
+para fazer um download crie um link e escolha o arquivo como parametro (<a href="arquivo") usando o ctrl + space
+depois adicione DOWNLOAD"nome do arquivo" e depois type="modelo do arquivo dependendo da extenção" 
+para saber qual va no site (https://www.iana.org/assignments/media-types/media-types.xhtml) e veja qual dependendo do arquivo
+
+
+
+
+simbolos e emojis:
+
+® /Marca registrada/ &reg;
+© /Copyright /&copy;
+™ /Trade Mark /&trade;
+€ /Euro /&euro;
+£ /Libra (pound) /&pound;
+¥ /Yen/ &yen;
+¢ /Cent /&cent;
+∅ /Vazio /&empty;
+Σ /Soma /&sum;
+Δ /Delta /&Delta;
+← /Seta esquerda /&larr;
+↑ /Seta acima /&uarr;
+→ /Seta direita /&rarr;
+↓ /Seta baixo /&darr;
+
+para adicionar emoji vá ao site (https://emojipedia.org/) e pegue o codigo de cada emoji
+(use &#x(código do emoji);) nao esqueça do ponto e vírgula
+ 
+///
+imagems:
+na aba src: (ou source)
+
+para colocar imagems voce precisa digitar <img> depois segurar a tecla Ctrl e Espaço depois selecione a imagem que voce quer
+
+mas você nao pode colocar imagems com direito autorais obvio ne, entao eu fiz uma lista dos sites com imagems sem copyright:
+
+-Pixabay.
+-Flickr.
+-Freepik.
+-Pexels.
+-Unsplash.
+-Vecteezy.
+-StockSnap.io.
+
+dica:evite imagems grandes para não deixar seu site lento , isso pode afetar o desempenho do site e o navegador não enviará
+esse site para muitas pessoas tente usar imagems de no maximo 50kb se necessário, para isso prefira usar imagems.jpg caso
+ela não necessite de transparencia, caso ela necessite use imagems.png
+
+na aba alt: (ou alternate)
+
+nessa aba coloque uma pequena descrição da imagem, isso ajudará a pessoas deficientes visuais então fassa uma boa descrição
+
+Picture:
+
+picture é usado para fazer que imagems fiquem de determinado tamanho dependendo do tamanho da tela.
+pra usar primeiro crie um <picture> e coloque <souce media="(min ou max = tamanho limite para troca)" srcset = "imagem com o tamanho alterado" type="image/tipo da imagem"
+
+tem uma sequencia a ser seguida no codigo de menor para maior de cima para baixo
+
+(lembrando que voce precisa antes de tudo colocar uma imagem dentro do picture para ser a imagem base NESSESARIAMENTE A MAIOR)
+
+///
+Audios:
+
+a maneira mais simples de colocar um audio em seu site é digitando a tag <audio> colocando o arquivo em src="arquivo" e depois colocando "autoplay"
+
+para carregar e tocar o audio automaticamente voce precisa criar um <source> dentro de <audio> apaga o srcset padrao de <source> e coloca o seu src coloca o audio em 1 formato
+depois repita o processo mais duas vezes colocando os formatos restantes que sao (mpeg,wav{não recomendado},ogg) para independentemente do navegador ele vai reconhecer o audio e tocará auto
+
+parametros
+
+preload=... : faz um pre carregamento de ou o audio inteiro (auto), ou os metadados(metadata) ou nada(none)
+autoplay= tocar automaticamente
+controls= aparecer os controles de pausa do audio
+loop= tocar musica em loop
+
+(evita arquivo wav porque sao muitos pesados
+
+
+
+
+favicoms:
+
+favicom é o icone da pagina, que aparece la em cima no navegador ele é extremamente necessario para um bom site!
+
+é necessario uma imagem em .ico para utilizar de favicom
+se voce nao tiver essa extenção em uma imagem voce pode acessar o site (https://favicon.io/) para transformar uma imagem em .ico
+
+para inserir um favcom no seu site utilize link:favcom emcima de "title" a aba "head" dentro do codigo base, apos isso
+apague o "favcon.ico" que é um favcon de exemplo que ja vem com o comando, no lugar dele segure Ctrl e aperte espaço
+depois so escolher a imagem que deseja colocar como favcon do seu site (lembrando que a imagem deve estar na pasta do script)
+

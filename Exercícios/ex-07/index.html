@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX citaçoes e codigos</title>
+</head>
+<body>
+<h1>Citações e Códigos!</h1>
+<!---->
+<h2>código fonte</h2>
+
+<p>código <code>fonte é uma fonte para leitura de codigos</code> e para usala utilize a tag CODE</p>
+
+<p>mas, se voce colocar um code em um paragrafo comum ele ficará bagunçado entao por isso ao em vez de usar p para paragrafos utilize a tag PRE</p>
+
+<pre><code>janela = Tk()
+janela.title("Cotação Atual de Moedas")
+texto = Label(janela, text="Clique no botão para ver as cotações de moedas")
+texto.grid(column=0, row=0, padx=10, pady=10)
+
+botao = Button(janela, text="Buscar cotações", command=pegar_cotacoes)
+botao.grid(column=0, row=1, padx=10, pady=10)
+
+texto_resposta = Label(janela, text="")
+texto_resposta.grid(column=0, row=2, padx=10, pady=10)
+</code></pre>
+<!---->
+<h2>citações</h2>
+
+<p>para fazer uma citaão utilize a tag Q aqui vai um exemplo</p>
+
+<p>O filósofo Sócrates disse <q>Conhece-te a ti mesmo</q>, um princípio fundamental da sabedoria antiga.</p>
+<!---->
+<h2>abreviações</h2>
+<p>para mostrar o significado de uma abreviação ou de qualquer palavra utilize a tagh ABBL, aqui vai um exemplo</p>
+<p>Eu estou atualmente trabalhando com <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Styles Sheets">CSS</abbr> e estou gostando muito!</p>
+</body>
+</html>
